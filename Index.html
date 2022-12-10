@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="Js/Colegio.js">
+</head>
+<body>
+    <br>
+    <main>
+        <div class="con" style="display: block;">
+
+            <form action="">
+                Nombres <br>
+                <input type="text" placeholder="Escriba sus nombres" id="nombre"> <br> <br>
+        
+                Apellidos <br>
+                <input type="text" placeholder="Escriba sus apellidos" id="apellido"> <br> <br>
+        
+                Curso <br>
+                <select name="curso" id="cursos">
+                    <option value="0">Seleccione su grado</option>
+                    
+                    <option value="6">6° Grado</option>
+                    <option value="7">7° Grado</option>
+                    <option value="8">8° Grado</option>
+                    <option value="9">9° Grado</option>
+                    <option value="10">10° Grado</option>
+                    <option value="11">11° Grado</option>
+                </select> <br> <br>
+        
+                Edad <br>
+                <input type="text" placeholder="Escriba su edad" id="edad"> <br> <br>
+        
+                Sexo <br>
+                <select name="sexo" id="sexo">
+                    <option value="0">Seleccione su genero</option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    
+                </select> <br> <br>
+        
+                Estado civil <br>
+                <select name="civil" id="civil">
+                    <option value="0">Seleccione su estado civil</option>
+                    <option value="1">Soltero</option>
+                    <option value="2">Casado</option>
+                </select> <br> <br>
+        
+                Poblacion vulnerable <br>
+                
+                <input type="radio" name="sino" id="si"> Si
+                <input type="radio" name="sino" id="no"> No
+                <br> <br>
+        
+                Ubicacion <br>
+                <select name="ubicacion" id="ubicacion">
+                    <option value="0">Seleccione su ubicacion</option>
+                    <option value="1">La playa</option>
+                    <option value="2">Malambo</option>
+                    <option value="3">Barranquilla</option>
+                    <option value="4">Galapa</option>
+                </select>
+                <input type="submit" value="Enviar formulario">
+            </form>
+        </div>
+        <div class="con">
+            <div class="form">
+                <h2>¿Desea agregar otro estudiante?</h2>
+                <input type="button" value="Si" id="siBoton">
+                <input type="button" value="No" id="noBoton">
+            </div>
+        </div>
+        <div class="con">
+            <div class="form">
+                <h2>Estadisticas de los estudiantes</h2>
+                Numero de estudiantes: <span id="numeroEstudiantes"></span> <br> <br>
+                Numero de estudiantes mayores de edad: <div class="vid"><div class="sal" id="mayores"></div></div>
+                Estudiantes masculinos: <div class="vid"><div class="sal" id="masculinos"></div></div>
+                Estudiantes femeninos: <div class="vid"><div class="sal" id="femeninos"></div></div>
+                Estudiantes en poblacion vulnerable: <div class="vid"><div class="sal" id="vulner"></div></div>
+                Numero de estudiantes por curso: <div id="porCurso">
+
+                </div> <br> <br>
+                Numero de personas por ubicacion: <div id="porUbicacion">
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/Colegio.js"></script>
+</html>
